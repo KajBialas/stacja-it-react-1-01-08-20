@@ -4,6 +4,7 @@ import TextSection from './TextSection';
 import Counter from './Counter';
 import PostDetails from './PostDetails';
 import PostList from './PostList';
+import Form from './Form';
 import Footer from './Footer';
 
 const TEXTS = {
@@ -19,6 +20,7 @@ function App() {
       <Counter />
       <PostDetails />
       <PostList />
+      <Form />
       <Footer/>
     </Fragment>
   );
