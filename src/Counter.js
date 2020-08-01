@@ -6,6 +6,14 @@ class Counter extends Component {
     secondCounter: 20,
   };
 
+  componentDidMount() {
+    console.log('MOUNT');
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log('UPDATE');
+  }
+
   handleIncrementCounter = () => this.setState({
     counter: this.state.counter + 1
   });
@@ -23,6 +31,7 @@ class Counter extends Component {
   );
 
   render() {
+    console.log('RENDER');
     return (
       <div>
         <p>
