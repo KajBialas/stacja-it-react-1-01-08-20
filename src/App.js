@@ -1,14 +1,13 @@
 import React, { Fragment } from 'react';
 import Header from './Header';
+import TextSection from './TextSection';
 import Footer from './Footer';
 
 function App() {
   return (
     <Fragment>
       <Header/>
-      <p>
-        Przykładowy tekst
-      </p>
+      <TextSection />
       <Footer/>
     </Fragment>
   );
