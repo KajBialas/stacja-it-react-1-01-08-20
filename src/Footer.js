@@ -1,9 +1,11 @@
 import React from 'react';
 
+const TEXT = 'Copyright 2020';
+
 function Footer() {
   return (
     <footer>
-      Copyright 2020
+      {TEXT}
     </footer>
   )
 }
