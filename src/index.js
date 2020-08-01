@@ -7,11 +7,13 @@ import About from './pages/About';
 import Page404 from './pages/Page404';
 import { Header } from './components/Header';
 import Footer from './components/Footer';
+import Menu from './components/Menu';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <BrowserRouter>
       <Header text="Nagłówek aplikacji"/>
+      <Menu />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
