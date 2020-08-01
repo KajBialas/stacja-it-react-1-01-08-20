@@ -4,14 +4,20 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './index.css';
 import Home from './pages/Home';
 import About from './pages/About';
+import Page404 from './pages/Page404';
+import { Header } from './components/Header';
+import Footer from './components/Footer';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <BrowserRouter>
+      <Header text="Nagłówek aplikacji"/>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
+        <Route component={Page404} />
       </Switch>
+      <Footer />
     </BrowserRouter>,
   document.getElementById('root')
 );
