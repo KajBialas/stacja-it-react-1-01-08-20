@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Header } from './Header';
 import TextSection from './TextSection';
+import Counter from './Counter';
 import Footer from './Footer';
 
 const TEXTS = {
@@ -13,6 +14,7 @@ function App() {
     <Fragment>
       <Header text={TEXTS.TITLE} />
       <TextSection text={TEXTS.MAIN_TEXT} />
+      <Counter />
       <Footer/>
     </Fragment>
   );
