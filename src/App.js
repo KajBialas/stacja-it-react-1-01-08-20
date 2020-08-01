@@ -3,6 +3,7 @@ import { Header } from './Header';
 import TextSection from './TextSection';
 import Counter from './Counter';
 import PostDetails from './PostDetails';
+import PostList from './PostList';
 import Footer from './Footer';
 
 const TEXTS = {
@@ -17,6 +18,7 @@ function App() {
       <TextSection text={TEXTS.MAIN_TEXT} />
       <Counter />
       <PostDetails />
+      <PostList />
       <Footer/>
     </Fragment>
   );
