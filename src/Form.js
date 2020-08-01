@@ -14,6 +14,8 @@ class Form extends Component {
 
   handleSubmitForm = (e) => {
     e.preventDefault();
+    this.props.handleAddComment(this.state.inputValue);
+
     this.setState({
       comments: [...this.state.comments, this.state.inputValue],
       inputValue: ''
