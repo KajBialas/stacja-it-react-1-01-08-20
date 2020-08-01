@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 class Form extends Component {
   state = {
     inputValue: '',
+    comments: [],
   };
 
   handleInputChange = (e) => {
@@ -13,9 +14,13 @@ class Form extends Component {
 
   handleSubmitForm = (e) => {
     e.preventDefault();
-    console.log(this.state.inputValue);
-    this.setState({inputValue: ''});
+    this.setState({
+      comments: [...this.state.comments, this.state.inputValue],
+      inputValue: ''
+    });
   };
+
+  renderComments = () => this.state.comments.map((comment, index) => <div key={index}>{comment}</div>);
 
   render() {
     const { inputValue } = this.state;
@@ -26,6 +31,8 @@ class Form extends Component {
           <input value={inputValue} onChange={this.handleInputChange}/>
           <button type="submit">SUBMIT</button>
         </form>
+        <h2>Lista komentarzy:</h2>
+        {this.renderComments()}
       </div>
     )
   }
