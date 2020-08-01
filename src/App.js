@@ -1,9 +1,13 @@
 import React from 'react';
+import Header from './Header';
 
 function App() {
   return (
     <div>
-      <h1>Blog React</h1>
+      <Header />
+      <p>
+        Przykładowy tekst
+      </p>
     </div>
   );
 }
