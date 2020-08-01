@@ -10,6 +10,14 @@ class Counter extends Component {
     counter: this.state.counter + 1
   });
 
+  handleDecrementCounter = () => this.setState({
+    counter: this.state.counter - 1
+  });
+
+  handleResetCounter = () => this.setState({
+    counter: 10
+  });
+
   handleIncrementSafeCounter = () => this.setState(
     (prevState) => ({counter: prevState.counter + 1})
   );
@@ -20,7 +28,9 @@ class Counter extends Component {
         <p>
           Wartość licznika: {this.state.counter}
         </p>
-        <button onClick={this.handleIncrementSafeCounter}>ZWIĘKSZ</button>
+        <button onClick={this.handleIncrementCounter}>ZWIĘKSZ</button>
+        <button onClick={this.handleDecrementCounter}>ZMNIEJSZ</button>
+        <button onClick={this.handleResetCounter}>RESET</button>
       </div>
     )
   }
