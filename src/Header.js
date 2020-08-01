@@ -1,13 +1,12 @@
 import React from 'react';
 
-function Header() {
+export function Header({text}) {
   return (
     <header>
       <h1>
-        Blog aplikacji w React JS
+        {text}
       </h1>
     </header>
   )
 }
 
-export default Header;
