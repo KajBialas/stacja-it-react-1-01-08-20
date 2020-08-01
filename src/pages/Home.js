@@ -1,18 +1,18 @@
 import React, { Fragment, Component } from 'react';
-import { Header } from './Header';
-import TextSection from './TextSection';
-import Counter from './Counter';
-import PostDetails from './PostDetails';
-import PostList from './PostList';
-import Form from './Form';
-import Footer from './Footer';
+import { Header } from '../components/Header';
+import TextSection from '../components/TextSection';
+import Counter from '../components/Counter';
+import PostDetails from '../components/PostDetails';
+import PostList from '../components/PostList';
+import Form from '../components/Form';
+import Footer from '../components/Footer';
 
 const TEXTS = {
   TITLE: 'Nagłówek aplikacji',
   MAIN_TEXT: 'Główna treść strony',
 };
 
-class App extends Component {
+class Home extends Component {
   state = {
     comments: []
   };
@@ -36,4 +36,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;
