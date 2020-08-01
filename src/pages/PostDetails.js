@@ -13,7 +13,7 @@ class PostDetails extends Component {
       isError: false,
     });
 
-    fetch('https://jsonplaceholder.typicode.com/posts/1')
+    fetch(`https://jsonplaceholder.typicode.com/posts/${this.props.match.params.id}`)
       .then(response => response.json())
       .then(data => setTimeout(() => this.setState({
         postDetails: data,

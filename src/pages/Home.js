@@ -1,7 +1,6 @@
 import React, { Fragment, Component } from 'react';
 import TextSection from '../components/TextSection';
 import Counter from '../components/Counter';
-import PostDetails from '../components/PostDetails';
 import PostList from '../components/PostList';
 import Form from '../components/Form';
 
@@ -23,7 +22,6 @@ class Home extends Component {
       <Fragment>
         <TextSection text={TEXTS.MAIN_TEXT}/>
         <Counter/>
-        <PostDetails/>
         <PostList/>
         <Form handleAddComment={this.handleAddComment}/>
       </Fragment>

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 
 class PostList extends Component {
   state = {
@@ -26,7 +27,7 @@ class PostList extends Component {
   };
 
   renderPostList = () => this.state.postList.map((postElement) => (
-    <div key={postElement.id}>{postElement.title}</div>
+    <Link to={`/post/${postElement.id}`} key={postElement.id}>{postElement.title}</Link>
   ));
 
   render() {

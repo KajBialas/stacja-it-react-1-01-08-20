@@ -5,6 +5,7 @@ import './index.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Page404 from './pages/Page404';
+import PostDetails from './pages/PostDetails';
 import { Header } from './components/Header';
 import Footer from './components/Footer';
 import Menu from './components/Menu';
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
+        <Route path="/post/:id" component={PostDetails} />
         <Route component={Page404} />
       </Switch>
       <Footer />
